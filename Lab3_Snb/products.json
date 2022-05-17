@@ -1,0 +1,83 @@
+[
+    {
+        "prodID": 1001,
+        "prodImg":"Image/MCaramel.jpg",
+        "prodName": "Caramel Macchiato(HIT)",
+        "prodDesc": "This is our Caramel Macchiato. It is a coffee beverage with steamed milk, espresso, vanilla syrup and caramel drizzle.",
+        "prodPrice": 5.29
+    },
+
+    {
+        "prodID": 1002,
+        "prodImg":"Image/Icedmatcha.jpeg",
+        "prodName": "Green Tea Latte",
+        "prodDesc": "This is our green tea latte and it is simply a latte made with green tea instead of espresso.",
+        "prodPrice": 5.99
+    },
+
+    {
+        "prodID": 1003,
+        "prodImg": "Image/Milktea.jpg",
+        "prodName": "Milk Tea Latte",
+        "prodDesc": "Tea lattes are a style of milk tea and a variation on cafe lattes.",
+        "prodPrice": 4.99
+    },
+
+    {
+        "prodID": 1004,
+        "prodImg":"Image/HLatte.jpg",
+        "prodName": "Horchata Latte",
+        "prodDesc": "Horchata is a popular Mexican drink made with rice, milk, and cinnamon. It's often served straight, but you can turn it into an horchata latte.",
+        "prodPrice": 5.79
+    },
+
+    {
+        "prodID": 1005,
+        "prodImg":"Image/Pumpkin.jpg",
+        "prodName": "Pumpkin Spice",
+        "prodDesc": "This is our Pumpkin spice is a blend of cinnamon, nutmeg, and cloves.",
+        "prodPrice":7.99
+    },
+
+    {
+        "prodID": 1006,
+        "prodImg": "Image/Cina.jpg",
+        "prodName": "Cinnamon Choco Latte",
+        "prodDesc": "A cinnamon choco latte is a coffee beverage with the flavors and ingredients of both a latte and hot cocoa. It is like two drinks in one! It is topped with a serving of whipped cream and cinnamon syrup!.",
+        "prodPrice": 7.29
+    },
+
+    {
+        "prodID": 1007,
+        "prodImg": "Image/Thai.jpg",
+        "prodName":"Thai Tea Latte",
+        "prodDesc": "Thai Tea is made from strongly-brewed black tea, often spiced with ingredients such as star anise, crushed tamarind, cardamom, and occasionally others as well.",
+        "prodPrice":5.79
+    },
+
+    {
+        "prodID":1008,
+        "prodImg": "Image/White.jpg",
+        "prodName": "White Choco Latte",
+        "prodDesc": "White chocolate is a chocolate confection, pale ivory in color, made from cocoa butter, sugar, milk solids and sometimes vanilla.",
+        "prodPrice":7.99
+    },
+
+    {
+        "prodID": 1009,
+        "prodImg": "Image/Spiced.jpg",
+        "prodName": "Spiced Chai Latte",
+        "prodDesc": "This chai latte is milk tea along with chai spices made with ground ginger, cardamom, and cinnamon",
+        "prodPrice":3.99
+    },
+
+    {
+        "prodID": 1100,
+        "prodImg": "Image/Expresso.jpg",
+        "prodName": "Espresso Macchiato",
+        "prodDesc": "An espresso macchiato, also known as caffè macchiato or simply macchiato, is a coffee drink made with espresso and steamed milk.",
+        "prodPrice":2.99
+    }
+
+   
+]

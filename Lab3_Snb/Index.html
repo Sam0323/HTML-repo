@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOM N TOMS</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/MenuStyle.css">
+    <script>
+        
+        window.onload = function() {
+            
+            function createCookie(name,value,days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime()+(days*24*60*60*1000));
+                    var expires = "; expires="+date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name+"="+value+expires+"; path=/";
+            }
+            
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+            
+            
+            if(person=readCookie("person")) {
+                
+                document.getElementById("personaltext").innerHTML = "Welcome, " + person + ". We hope you will enjoy your TOM N TOMS experience!"
+                document.getElementById("providename").innerText = "Please click here if you are not " + person+ "."
+
+            } else {
+                
+                document.getElementById("providename").innerText = "Please click here to provide your name."
+            }
+            
+            document.getElementById("providename").addEventListener("click", function(){ 
+                
+                var person = prompt("Please enter your name:");
+                
+                if (person == null || person == "") {
+                    
+                } else {
+                    
+                    document.getElementById("personaltext").innerHTML = "Welcome, " + person + ". We hope you will enjoy your TOM N TOMS experience!"
+                    
+                    createCookie("person", person, 7);
+                    
+                    document.getElementById("providename").innerText = "Please click here if you are not " + person+ "."
+                }
+            });
+
+            
+            setTimeout(function(){
+                
+                var random = 10 * 5 ;
+                
+                var isNotDivisible = (random%5);
+                
+                if(!isNotDivisible) {
+                    if(confirm("You have been randomly selected to participate in a customer satisfaction survey.")==true)
+                    location.href = "4315_Lab1_Snb2832.html"
+                    
+                    
+                    
+                }
+            }, 5000);
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color:rgb(153, 4, 4);">Thank You For Choosing <i style="color: rgb(5, 70, 5);">TOM N TOMS</i></h1>
+    
+    <div class="menuDiv"> 
+        <table class="menuTable">
+        <tr>
+            <td class="menu"><a href="index.html">Home</a></td>
+            <td><a href="Product_snb.html">Products</a></td>
+            <td><a href="about_snb.html">About</a></td>
+            <td><a href="Contact_Snb.html">Contact</a></td>
+        </tr>
+        </table>
+</div>
+    
+    <br>
+    <br>
+    <div style="display: flex;">
+            <p style="width: 70%;" >TOM N TOMS Coffee is a coffee house chain based in South Korea. It first opened in the Apgujeong-dong District of Seoul.In 2009, the South Korean coffee chain established its first 
+                franchises abroad- opening two stores in Australia and one in Singapore.
+                From then on, the company have established branches and franchises across the world, including in the United States, Thailand, Philippines, Macau, China, Mongolia, Malaysia and Hong Kong.
+                Now it has over 400 branches in 9 different countries worldwide. It is also among the top 3 coffee brands in South Korea.</p>
+            <img style="width: 17%;"  src="tomntom.png" alt="TOM N TOMS" style="width:20%; padding-left:2%; padding-right:2%;">
+    </div>
+    <br><br>
+    <div style="display: flex; width: 70%;">
+        <img style="width: 30%;"  src="Image/coffee.jpg" alt="coffee">
+        <div style="width: 70%; margin: 3%;">
+            <p id="personaltext">Want a more personalized experience on our website?</p>
+            <a href="#" id="providename"></a>
+        </div>
+    </div>
+</body>
+</html>

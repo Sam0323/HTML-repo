@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html lang = "en">
+	<head>
+
+		<meta charset = "utf-8">
+		<title>AROMASPRODUCTS</title>
+		
+		<link rel="stylesheet" type="text/css" href="CSS/ProductPage.css">
+		<link rel="stylesheet" type="text/css" href="CSS/MenuStyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/ProductStyle.css">
+		
+		<h1> TOM N TOMS COFFEE</h1>
+		
+		<div class="menuDiv"> 
+			<table class="menuTable">
+			<tr>
+				<td class="menu"><a href="Index.html">Home</a></td>
+				<td><a href="Product_snb.html">Products</a></td>
+				<td><a href="about_snb.html">About</a></td>
+				<td><a href="Contact_Snb.html">Contact</a></td>
+			</tr>
+			</table>
+	</div>
+	</head>
+	<br>
+	
+	<body>
+	
+	<h2>Our Products</h2>
+
+		<form action="#" style="text-align: center">
+		<div style="text-align: center; width: 90%;">
+		<br>
+		<p>
+		<table style=margin:auto;>
+			<thead>
+				<tr class="productRow">
+					<th><a class="title" id="sortID" href="javascript:sortByID( )">Product ID</a></th>
+					<th><a></a></th>
+					<th><a class="title" id="sortName" href="javascript:sortByName( )">Product Name</a></th>
+                    <th><a class="title" style="text-decoration: none;">Product Description</a></th>
+					<th><a class="title" id="sortPrice" href="javascript:sortByPrice( )">Product Price</a></th>
+					<th><a class="title" style="text-decoration: none;">Quantity</a></th>
+			</thead>
+			           
+			<tbody id = "tbodyRows">
+			</tbody>
+		</table>
+		</div>			
+		
+		<p class="buttons">
+			<input type="submit" value="Confirm" onclick = "javascript:confirmQty();">
+			<input type="reset" value="Reset">
+		</p>
+
+		<script src="main.js"></script>
+
+    	</form>
+	</body>
+</html>

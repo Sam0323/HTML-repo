@@ -1,0 +1,115 @@
+<!--Student Name: Samaya Bhari-->
+<!--Student ID: 1001892832-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Survey</title>
+<style>
+	body {background-color:bisque}
+	h1   {text-align: center;}
+	h2   {text-align: center;}
+
+div{
+   float:left; 
+   width:70%;
+    color:rgb(5, 70, 5);
+}
+img   {width: 75%; height: auto; border-radius: 25%; padding-right: 15%; }
+.img_text {display: flex; align-items: center; flex-direction: row; padding-left: 20%; padding-right: 20%}
+.buttons {text-align: center; padding-left: 200px}
+
+table   {margin-right: auto; margin-left: auto; max-width: 60%; }
+th    {font-size: 125%; }
+h1,h2{
+   text-align:center;
+   color:rgb(5, 70, 5);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+opacity: 1
+}
+
+ ul {
+   margin-right:auto;
+   margin-left:auto;
+   max-width:200px;
+ }
+
+  
+ li {
+   color:#E57057;
+   }
+ 
+  ol {
+   margin-right:auto;
+   margin-left:auto;
+   max-width:480px;
+ }
+
+
+</style>
+</head>
+
+<body>
+    <h1 style="color:rgb(153, 4, 4);">Thank You For Choosing <i style="color: rgb(5, 70, 5);">TOM N TOMS</i></h1>
+<div class="img_text" >
+You have been randomly selected to participate in our Customer Satisfaction Survey. Please tell us a little bit about yourself by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences with TOM N TOMS. To show our appreciation, we will send you a $5 TOM N TOMS eGift Certificate via e-mail.
+<img src="tomntom.png" alt="TOM N TOMS" style="width:20%; padding-left:2%; padding-right: 2%;">
+</div>
+
+
+<br>
+<hr>
+
+<h2>Personal Information</h2>
+<form>
+<table>
+
+<tr>
+<td>First Name:</td><td> <input type="text" name="fname" required autofocus></td>
+<td>Last Name:</td><td> <input type="text" name="lname" required autofocuss></td>
+</tr>
+<tr>
+<td>E-mail Address:</td><td> 
+  <input type="email" name="email" required autofocus></td>
+</tr>
+<tr>
+<td>Gender:</td><td> Male<input type="radio" name="gender" value="male">
+&nbsp; Female<input type="radio" name="gender" value="female"></td>
+</tr>
+<tr>
+<td>Age Group:</td><td colspan="2"> Under 21<input type="radio" name="age" value="under21">
+21-40<input type="radio" name="age" value="21-40">
+Over 40<input type="radio" name="age" value="over40">
+</td>
+</tr>
+</table>
+
+
+<hr>
+
+<br>
+<h2>Please respond to the opinion statements using the following scale:</h2>
+<ul>
+<li>1 = strongly agree</li>
+<li>2 = somewhat agree</li>
+<li>3 = neither agree nor disagree</li>
+<li>4 = somewhat disagree</li>
+<li>5 = strongly disagree</li>
+</ul>
+
+<ol>
+<li>TOM N TOMS are always fresh. <input type="number" min="1" max="5"></li>
+<li>TOM N TOMS are decorated in an elegant way. <input type="number" min="1" max="5"></li>
+<li>TOM N TOMS are resonably priced. <input type="number" min="1" max="5"></li>
+<li>TOM N TOMS are of the highest quality. <input type="number" min="1" max="5"></li>
+<li>Overall, I am very satisfied with TOM N TOMS. <input type="number" min="1" max="5"></li>
+</ol>
+<div class="buttons">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</div>
+</form>
+</body>
+</html>

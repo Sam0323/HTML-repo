@@ -1,0 +1,31 @@
+/*Samaya Bhari
+Student ID: 1001892832
+INSY 4315-001
+Professor: Karen Scott */
+
+.tbodyRows
+{
+    border: solid;
+    table-layout: fixed;
+    color: darkgreen;
+}
+
+
+.productRow
+{
+	padding: auto;
+    border:solid;
+    height: 50px;
+}
+
+.prod
+{
+    border: solid;
+    height: 50px;
+    color: darkgreen;
+}
+
+img{
+    
+    width: 190px;
+}
